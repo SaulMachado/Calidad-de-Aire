@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Calidad de Aire</title>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <div align="center">
+            <h2 class="center-block text-primary"> Calidad del Aire </h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card border-success text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success" id="name1">Header</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-text " id="a"></h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-success" id="alert1"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-success text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success" id="name2">Header</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-text " id="b"></h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-success" id="alert2"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-success text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success" id="name3">Header</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-text" id="c"></h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-success" id="alert3"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-success text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success" id="name4">Header</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-text " id="d"></h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-success" id="alert4"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-success text-center mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-transparent border-success" id="name5">Header</div>
+                    <div class="card-body text-success">
+                        <h4 class="card-text " id="e"></h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-success" id="alert5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <button id="button" class="btn btn-outline-danger">excel</button>
+        </div>
+
+    </div>
+
+    <!--  <div class="container">
+        <div class="row">
+            <div>
+                <canvas id="Here"></canvas>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        setInterval(function() {
+            reload();
+        }, 3000)
+
+        function reload() {
+            var ctx = document.getElementById('Here').getContext('2d');
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'bar',
+
+                // The data for our dataset
+                data: {
+                    labels: ['Sensor A'],
+                    datasets: [{
+                        label: 'My First dataset',
+                        backgroundColor: 'rgb(255, 99, 132)',
+                        borderColor: 'rgb(255, 99, 132)',
+                        data: [localStorage.getItem("a")]
+                    }, ]
+                },
+
+                // Configuration options go here
+                options: {}
+            });
+        }
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
